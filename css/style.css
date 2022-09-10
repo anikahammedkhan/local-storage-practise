@@ -1,0 +1,14 @@
+.container {
+    height: 600px;
+    border-radius: 25px;
+}
+
+input {
+    width: 60%;
+    height: 40px;
+}
+
+button,
+.button {
+    width: 150px;
+}
