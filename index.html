@@ -17,29 +17,37 @@
             <div class="mx-5">
                 <div>
                     <p class="text-primary">Name:</p>
-                    <input type="text" class="mb-5 rounded px-2 me-4" placeholder="Input your name here: ">
-                    <button class="btn btn-danger">Delete Name</button>
-                    <button class="btn btn-success">Send Name</button>
+                    <input id="input-name-field" type="text" class="mb-5 rounded px-2 me-4"
+                        placeholder="Input your name here: ">
+                    <button onclick="deleteFunction('Name')" class="btn btn-danger">Delete
+                        Name</button>
+                    <button onclick="sendFunction('input-name-field','Name')" id="btn-send-name"
+                        class="btn btn-success">Send
+                        Name</button>
                 </div>
                 <div>
                     <p class="text-primary">Email:</p>
-                    <input type="text" class="mb-5 rounded px-2 me-4" placeholder="Input your email here: ">
-                    <button class="btn btn-danger">Delete Email</button>
-                    <button class="btn btn-success">Send Email</button>
+                    <input id="input-email-field" type="text" class="mb-5 rounded px-2 me-4"
+                        placeholder="Input your email here: ">
+                    <button onclick="deleteFunction('Email')" class="btn btn-danger">Delete Email</button>
+                    <button onclick="sendFunction('input-email-field','Email')" class="btn btn-success">Send
+                        Email</button>
                 </div>
                 <div>
                     <p class="text-primary">Message:</p>
-                    <input type="text" class="mb-5 rounded px-2 me-4" placeholder="Input your message here: ">
-                    <button class="btn btn-danger">Delete Message</button>
-                    <button class="btn btn-success">Send Message</button>
+                    <input id="input-message-field" type="text" class="mb-5 rounded px-2 me-4"
+                        placeholder="Input your message here: ">
+                    <button onclick="deleteFunction('Message')" class="btn btn-danger">Delete Message</button>
+                    <button onclick="sendFunction('input-message-field','Message')" class="btn btn-success">Send
+                        Message</button>
                 </div>
 
                 <div class="d-flex justify-content-evenly">
                     <div>
-                        <div class="btn btn-warning text-white button">Send</div>
+                        <div onclick="sendAll()" class="btn btn-warning text-white button">Send</div>
                     </div>
                     <div>
-                        <div class="btn btn-danger text-white button">Send</div>
+                        <div onclick="reset()" class="btn btn-danger text-white button">Reset</div>
                     </div>
                 </div>
             </div>
